@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title id="title">Stopwatch</title>
+        <style>
+            .buttons button {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                border: none;
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(219, 253, 253);">
+        <div id="heading_container" style="text-align: center; padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;">
+            <h1 id="heading">⏱️ Sports Stopwatch</h1>
+        </div>
+        <div id="stopwatch_container" style="display: flex; font-size: 64px;
+        font-family: Arial, Helvetica, sans-serif; justify-content: center;
+        align-items: center; flex-direction: column;">
+            <div id="Time" style="text-align: center; background-color: aliceblue;
+            border-color: black; border-style: solid; border-radius: 10px;
+            width: fit-content; padding: 10px;">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span>:</span>
+                <span id="milli_seconds">000</span>
+            </div>
+            <div class="buttons">
+                <button id="lap_button">Lap</button>
+                <button id="start_button">Start</button>
+                <button id="reset_button">Reset</button>
+            </div>
+        </div>
+        <div id="laps_container" style="border-style: solid; width: 320px;
+        background-color: white; border-width: 1px; height: 320px;
+        margin: 25px; font-family: Arial, Helvetica, sans-serif;
+        overflow-y: auto; text-align: center;">
+            <h2>Lap Times</h2>
+            <ul id="lap_times" style="list-style-type: none; text-align: start;">
+            </ul>
+        </div>
+    </body>
+    <script src="./stopwatch.js"></script>
+</html>
